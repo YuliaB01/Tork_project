@@ -1,0 +1,29 @@
+.hero-content {
+  height: 100%;
+  padding: 300px 50px 50px 50px;
+
+  &__heading {
+    font-family: OpenSansLight, sans-serif;
+    font-size: 70px;
+    color: #fff;
+    line-height: 90px;
+    animation: fadein 3s;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: @hero-text-color;
+    font-family: OpenSans, sans-serif;
+    line-height: 30px;
+    animation: fadein 5s;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
