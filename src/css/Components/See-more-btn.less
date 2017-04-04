@@ -1,0 +1,23 @@
+.see-more-btn {
+  width: 165px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: @see-more-btn-color;
+  color: @hero-text-color;
+  padding: 8px 12px;
+  font-family: OpenSansSemibold, sans-serif;
+  font-size: 1em;
+
+  &:hover {
+    background-color: darken(@see-more-btn-color, 7%);
+    color: @hero-text-color;
+    text-decoration: none;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    background-color: darken(@see-more-btn-color, 12%);
+    color: @hero-text-color;
+    text-decoration: none;
+  }
+}
