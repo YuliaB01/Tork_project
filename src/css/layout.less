@@ -121,13 +121,28 @@ body, html {
 }
 
 .promo {
-  height: 500px;
+  min-height: 500px;
   background-color: @buy-btn-color;
-  //position: relative;
 }
 
+.info {
+  position: relative;
+  z-index: 4;
+  background-color: #f4f8fb;
+  min-height: 535px;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.info-div {
+  position: relative;
+}
+
+
 .footer {
-  height: 570px;
+  min-height: 570px;
   width: 100%;
   background-color: @footer-bg-color;
   position: relative;
