@@ -1,0 +1,42 @@
+.get-in-touch {
+  &__head {
+    font-family: OpenSansSemibold, sans-serif;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    .footer-text-main-styles;
+
+  }
+
+  &__p {
+    font-family: OpenSansRegular, sans-serif;
+    .footer-text-main-styles;
+
+  }
+
+  &__info {
+    font-family: OpenSansSemibold, sans-serif;
+    .footer-text-main-styles;
+    padding-top: 70px;
+    padding-bottom: 25px;
+    margin: 0;
+  }
+
+  &__list {
+    .general-list-styles;
+  }
+
+  &__link {
+    font-family: OpenSansRegular, sans-serif;
+    .footer-text-main-styles;
+
+    &:hover {
+      color: @footer-text-color;
+    }
+
+    &:active,
+    &:focus {
+      color: darken(@footer-text-color, 25%);
+      text-decoration: none;
+    }
+  }
+}

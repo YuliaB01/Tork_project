@@ -8,7 +8,7 @@ var gulp = require("gulp"),
     sync = require("browser-sync").create(),
     uglify = require("gulp-uglify");
 
-var isDevelopment = true;
+var isDevelopment = false;
 
 gulp.task("css:own", function() {
     return gulp.src("src/css/main.less")
