@@ -17,6 +17,18 @@ $(document).ready(function() {
             clearFormInputs();
         }
     });
+
+    $(".see-more-btn").on("click", function() {
+       return false;
+    });
+
+    $(".get-in-touch__link").on("click", function() {
+       return false;
+    });
+
+    $(".btn").on("click", function() {
+       return false;
+    });
 });
 
 function clearFormInputs(target) {

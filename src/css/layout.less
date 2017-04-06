@@ -75,12 +75,16 @@ body, html {
     float: right;
     padding-top: 50px;
     padding-right: 15px;
+    position: relative;
+    z-index: 4;
   }
 
   .collapse-menu {
     display: inline-block;
     float: right;
     padding-top: 50px;
+    position: relative;
+    z-index: 4;
   }
 
   .button {
@@ -107,12 +111,13 @@ body, html {
 
 .Hero-section {
   margin-top: -160px;
-  min-height: 870px;
+  height: 50%;
   background-image: url(/images/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
+  position: relative;
 }
 
 .gradient {
@@ -140,6 +145,46 @@ body, html {
   position: relative;
 }
 
+.designed-for-humans {
+  height: 610px;
+  background-color: #232831;
+  position: relative;
+
+  &:after {
+    width: 190px;
+    height: 65px;
+    margin-left: -85px;
+    left: 50%;
+    top: -11px;
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: url(/images/shape.png);
+    background-position: 50% 30%;
+  }
+}
+
+.designed-content {
+  position: relative;
+  height: 100%;
+
+  &__head {
+    font-family: OpenSansLight, sans-serif;
+    font-size: 40px;
+    line-height: 1.375;
+    color: @footer-text-color;
+    margin-top: 100px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-family: OpenSans, sans-serif;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #9da5b0;
+    padding: 0 25px;
+  }
+}
 
 .footer {
   min-height: 570px;

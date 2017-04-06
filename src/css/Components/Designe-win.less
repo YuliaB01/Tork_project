@@ -1,0 +1,52 @@
+.designe-win-div {
+  height: 280px;
+  width: 80%;
+  margin: 80px auto 0;
+  position: relative;
+  border-top: 40px solid @info-section-text-color;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-image: url(/images/designe-win.jpg);
+  background-position: 25% 67%;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  &__dot {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+
+    & > i {
+      padding-right: 5px;
+      color: #434955;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    border: 2px solid @hero-text-color;
+    margin-top: 25px;
+    padding: 10px;
+    font-family: OpenSansLight, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: @hero-text-color;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      border: 2px solid @hero-text-color - 15%;
+      color: darken(@hero-text-color, 15%);
+      text-decoration: none;
+    }
+  }
+}
